@@ -78,13 +78,13 @@ body {
   color: #000000;
 }
 
-/* Навигация сайта
-    Portfolio page */
+/* ===== Навигация сайта
+    Portfolio page ===== */
 .portfolio-header {
   border-bottom: 1px solid var(--border-color);
 }
 
-/* Навигация сайта */
+/* ===== Навигация сайта Start ===== */
 .container.header {
   padding-top: 0;
   padding-bottom: 0;
@@ -176,8 +176,9 @@ body {
   margin-right: 10px;
   fill: currentColor;
 }
+/* ===== Навигация сайта End ===== */
 
-/* Секция intro */
+/* ===== Секция intro Start ===== */
 .section-intro {
   text-align: center;
   letter-spacing: 0.06em;
@@ -225,8 +226,9 @@ body {
 
   cursor: pointer;
 }
+/* ===== Секция intro End ===== */
 
-/* Секция Особенности */
+/* ===== Секция Особенности Satr ===== */
 .features-list {
   display: flex;
 }
@@ -264,8 +266,9 @@ body {
   background-color: var(--bg-color-addition);
   fill: var(--title-color);
 }
+/* ===== Секция Особенности End ===== */
 
-/* Секция Чем мы занимаемся */
+/* ===== Секция Чем мы занимаемся Start ===== */
 .what-do-we-do > .container {
   padding-top: 0;
 }
@@ -312,8 +315,9 @@ body {
 
   color: #ffffff;
 }
+/* ===== Секция Чем мы занимаемся End ===== */
 
-/* Секция Наша команда */
+/* ===== Секция Наша команда Start ===== */
 .team-section {
   background-color: var(--bg-color-addition);
 }
@@ -385,8 +389,9 @@ body {
 .icon-social {
   fill: currentColor;
 }
+/* ===== Секция Наша команда End ===== */
 
-/* Секция постоянные клиенты */
+/* ===== Секция постоянные клиенты Start ===== */
 .clients-list {
   display: flex;
   justify-content: space-between;
@@ -416,7 +421,9 @@ body {
 .icon-client {
   fill: currentColor;
 }
-/* Footer */
+/* ===== Секция постоянные клиенты End ===== */
+
+/* ===== Footer Start ===== */
 .basement {
   background-color: var(--bg-color-second);
 }
@@ -427,7 +434,7 @@ body {
   padding-bottom: 60px;
 }
 
-/* Address box */
+/* ===== Address box Start ===== */
 .address-box {
   display: flex;
   flex-direction: column;
@@ -457,12 +464,14 @@ body {
 .link-contact {
   color: var(--text-address-link);
 }
+/* ===== Address box End ===== */
 
-/* Присоединяйтесь */
+/* ===== Присоединяйтесь Start ===== */
 .follow-box {
   margin-top: 12px;
+  margin-right: 93px;
 }
-.followus {
+.slogan {
   display: flex;
   font-weight: bold;
   line-height: 1.14;
@@ -486,8 +495,66 @@ body {
 .link-social.footer:focus {
   background-color: var(--accent);
 }
+/* ===== Присоединяйтесь End ===== */
 
-/* Портфолио */
+/* ===== Subscription Start ===== */
+.subscription-box {
+  margin-top: 12px;
+}
+
+.subscription-form {
+  display: flex;
+  justify-items: center;
+}
+
+.subscription-form > input {
+  font-size: 16px;
+  line-height: 1.2;
+  color: #ffffff;
+
+  margin-right: 12px;
+
+  padding: 15px 16px;
+  min-width: 358px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: var(--bg-color-second);
+}
+
+.subscription-form > input::placeholder {
+  font-size: 16px;
+  line-height: 1.2;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.btn-sub {
+  display: flex;
+  align-items: center;
+
+  padding: 10px 28px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  border: none;
+  border-radius: 4px;
+
+  background-color: var(--accent);
+  color: var(--color-main);
+
+  cursor: pointer;
+}
+
+.icon-send {
+  margin-left: 10px;
+  fill: currentColor;
+}
+/* ===== Subscription End ===== */
+/* ===== Footer End ===== */
+
+/* ===== Портфолио Start ===== */
 .filter {
   display: flex;
   justify-content: center;
@@ -608,8 +675,9 @@ body {
 
   color: var(--text-color);
 }
+/* ===== Портфолио End ===== */
 
-/* Модальное окно */
+/* ===== Модальное окно Start ===== */
 .backdrop {
   position: fixed;
   top: 0;
@@ -617,8 +685,6 @@ body {
   bottom: 0;
   right: 0;
 
-  /* width: 100%;
-  height: 100%; */
   background-color: rgba(0, 0, 0, 0.2);
 
   opacity: 1;
@@ -660,3 +726,4 @@ body {
 
   cursor: pointer;
 }
+/* ===== Модальное окно End ===== */
