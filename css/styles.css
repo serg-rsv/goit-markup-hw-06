@@ -723,7 +723,130 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   padding: 5px;
+  color: #000000;
 
   cursor: pointer;
+
+  transition: color var(--time-duration) var(--cubic-func);
 }
+
+.btn-close:hover {
+  color: var(--accent);
+}
+
+.icon-close {
+  fill: currentColor;
+}
+
+.form-order {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+
+.form-order > b {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  margin-bottom: 12px;
+  color: var(--title-color);
+}
+
+.input-label {
+  margin-bottom: 4px;
+}
+
+.input-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.input {
+  padding: 0 40px;
+  height: 40px;
+  width: 100%;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  /* color: rgba(117, 117, 117, 0.5); */
+
+  transition: border-color var(--time-duration) var(--cubic-func),
+    color var(--time-duration) var(--cubic-func);
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.icon {
+  position: absolute;
+  margin: 0 12px;
+  width: 18px;
+  height: 18px;
+  fill: var(--title-color);
+
+  transition: fill var(--time-duration) var(--cubic-func);
+}
+
+.input:focus + .icon {
+  fill: var(--accent);
+}
+
+.input.comment {
+  padding: 12px 16px;
+  resize: none;
+  height: 120px;
+  margin-bottom: 20px;
+}
+
+.check-agreetment {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.checkbox {
+  position: absolute;
+  --webkit-appearance: none;
+  --moz-appearance: none;
+  appearance: none;
+}
+
+.checkbox:focus + .check-label::before {
+  border-color: var(--accent);
+}
+
+.check-label::before {
+  display: inline-flex;
+  content: "";
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--title-color);
+  border-radius: 2px;
+  margin-right: 8px;
+  background-color: #ffffff;
+  cursor: pointer;
+  transition: background-color var(--time-duration) var(--cubic-func),
+    border-color var(--time-duration) var(--cubic-func);
+}
+
+.checkbox:checked + .check-label::before {
+  border-color: transparent;
+  background-color: var(--accent);
+  background-origin: border-box;
+  background-image: url(../images/svg/icon-check.svg);
+}
+
+.btn-box {
+  text-align: center;
+}
+
 /* ===== Модальное окно End ===== */
