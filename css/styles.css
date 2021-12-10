@@ -777,14 +777,12 @@ body {
   border-radius: 4px;
   /* color: rgba(117, 117, 117, 0.5); */
 
-  transition: border-color var(--time-duration) var(--cubic-func),
-    color var(--time-duration) var(--cubic-func);
+  transition: border-color var(--time-duration) var(--cubic-func);
 }
 
 .input:focus {
   outline: none;
   border-color: var(--accent);
-  color: var(--accent);
 }
 
 .icon {
@@ -843,6 +841,11 @@ body {
   background-color: var(--accent);
   background-origin: border-box;
   background-image: url(../images/svg/icon-check.svg);
+}
+
+.link-agreetment {
+  color: var(--accent);
+  text-decoration: underline;
 }
 
 .btn-box {

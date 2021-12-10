@@ -351,9 +351,16 @@
         </div>
         <!-- Subscription -->
         <div class="subscription-box">
-          <b class="slogan">Подпишитесь на рассылку</b>
+          <label for="subscription-input" class="slogan"
+            >Подпишитесь на рассылку</label
+          >
           <form class="subscription-form" name="subscription-form" action="#">
-            <input type="email" name="email" placeholder="E-mail" />
+            <input
+              id="subscription-input"
+              type="email"
+              name="email"
+              placeholder="E-mail"
+            />
             <button class="btn-sub" type="submit">
               Подписаться<svg class="icon-send" width="24" height="24">
                 <use href="./images/icons.svg#icon-send"></use>
